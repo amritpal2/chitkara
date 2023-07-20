@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chitkara</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About Us</a></li>
+            <li><a href="">Contact Us</a></li>
+        </ul>
+    </div>
+    <h1 >Welcome to Chitkara University</h1>
+    <div class="carousel">
+        <div class="slides fade"><img id="ci1" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/banners/home-web-banner2.webp" alt=""></div>
+        <div class="slides fade"><img id="ci2" src="https://www.chitkara.edu.in/global/wp-content/uploads/2021/06/WINDSOR-BANNER.jpg" alt=""></div>
+        <div class="slides fade"><img id="ci3" src="https://www.chitkara.edu.in/wp-content/uploads/2019/02/Campus-leadership.jpg" alt=""></div>
+    </div><br>
+    <h2>&nbsp;
+        Courses We Offer!!</h3>
+    <div class="cards">
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/cse.webp" alt="">
+            <p class="crhd">BE</p>
+            <p class="crhd">BCA | MCA</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/business-hm.webp" alt="">
+            <p class="crhd">Business | Economics</p>
+            <p class="crhd">Accounting</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/hospitality-hm.webp" alt="">
+            <br>
+            <p  class="crhd">Hospitality</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/liberal-arts-hm.webp" alt=""><br>
+            <p class="crhd">Liberal Arts</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/pharma-hm.webp" alt=""><br>
+            <p class="crhd">Pharmacy</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/design-hm1.webp" alt="">
+            <p  class="crhd">Design | Arcchitecture</p>
+            <p class="crhd">Interior Design | Planning</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/maritime-hm.webp" alt=""><br>
+            <p class="crhd">Nautical Science</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/BA-LLB-doctoral.webp" alt=""><br>
+            <p class="crhd">B.A. LL.B.</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/healthcare-hm.webp" alt=""><br>
+            <p class="crhd">Allied Healthcare</p>
+        </div>
+        <div class="crd1">
+            <img class="cimg" src="https://www.chitkara.edu.in/wp-content/themes/chitkara/images/home-page/webp/schools/education-hm.webp" alt="">
+            <p class="crhd">Education</p>
+            <p class="crhd">B.Ed | M.Ed</p>
+        </div>
+
+    </div>
+</body>
+<script>
+    let count=0;
+    carousel();
+
+    function carousel(){
+        let i;
+        let arr=document.getElementsByClassName("slides");
+        if(count!=0){arr[count-1].style.display="none"}
+        if(count>=arr.length){arr[count-1].style.display="none";count=0}
+        arr[count].style.display="block";
+        count++;
+        setTimeout(carousel,2000);
+    }
+</script>
+</html>
